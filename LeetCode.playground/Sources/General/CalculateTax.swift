@@ -7,6 +7,8 @@ Brackets = [ [10000, 0.1],[20000, 0.2], [10000, 0.3], [null, .4]]
 null being rest of the salary
 */
 
+// COMPANIES: Facebook
+
 struct CalculateTax {
     static func calculateTax(_ salary: Double, _ brackets: [[Double]]) -> Double {
         var salary = salary
