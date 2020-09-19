@@ -4,6 +4,8 @@ import UIKit
     Implement dequeueReusableCellsWithIdentifier:indexPath:
 */
 
+// COMPANIES: Facebook
+
 class MyTableView {
     var reusableCells = [String: [UITableViewCell]]()
     var registeredCellClass = [String: UITableViewCell.Type]()

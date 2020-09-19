@@ -14,6 +14,8 @@ import Foundation
  Output: 7 -> 8 -> 0 -> 7
 */
 
+// COMPANIES: Amazon - 8, Microsoft - 6, Uber - 3, eBay - 2, Apple - 2
+
 class ListNode {
     let val: Int
     var next: ListNode?

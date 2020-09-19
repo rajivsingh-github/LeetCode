@@ -15,6 +15,8 @@ import Foundation
  1,1,5 → 1,5,1
 */
 
+// COMPANIES: Facebook - 19, Google - 5, Microsoft - 5, Apple - 4, Amazon - 3, Uber - 2
+
 class NextPermutation {
     static func getNextPermutation(_ arr: inout [Int]) {
         // 1. Find the largest index k such that nums[k] < nums[k + 1]. If no such index exists, just reverse nums and done.
