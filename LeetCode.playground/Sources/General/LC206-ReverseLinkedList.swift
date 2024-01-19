@@ -12,6 +12,10 @@ import Foundation
  A linked list can be reversed either iteratively or recursively. Could you implement both?
 */
 
+/*
+ COMPANIES: Snapchat
+ TAGS:
+*/
 public struct ReverseLinkedList {
 	public static func reverse(_ head: LinkedListNode?) -> LinkedListNode? {
 		if head == nil { return nil }

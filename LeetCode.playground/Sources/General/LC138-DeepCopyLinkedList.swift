@@ -44,6 +44,11 @@ import Foundation
 
 */
 
+/*
+ COMPANIES: Snapchat
+ TAGS:
+*/
+
 struct CopyRandomLinkedList {
 	static func deepCopy(_ head: RandomLinkedListNode?) -> RandomLinkedListNode? {
 		if head == nil { return nil }
