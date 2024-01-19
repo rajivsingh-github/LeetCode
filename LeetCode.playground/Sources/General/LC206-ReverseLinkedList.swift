@@ -12,20 +12,20 @@ import Foundation
  A linked list can be reversed either iteratively or recursively. Could you implement both?
 */
 
-class ReverseLinkedList {
-    static func reverseLinkedList(_ head: ListNode?) -> ListNode? {
-        if head == nil { return nil }
-        
-        var newHead: ListNode? = nil
-        var curr = head
-        
-        while let node = curr {
-            curr = node.next
-            
-            node.next = newHead
-            newHead = node
-        }
-        
-        return newHead
-    }
+public struct ReverseLinkedList {
+	public static func reverse(_ head: LinkedListNode?) -> LinkedListNode? {
+		if head == nil { return nil }
+		
+		var newHead: LinkedListNode? = nil
+		
+		// Start traversing the list
+		var curr = head
+		while let node = curr {
+			curr = node.next
+			node.next = newHead
+			newHead = node
+		}
+		
+		return newHead
+	}
 }

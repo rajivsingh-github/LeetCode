@@ -16,18 +16,8 @@ import Foundation
 
 // COMPANIES: Amazon - 8, Microsoft - 6, Uber - 3, eBay - 2, Apple - 2
 
-class ListNode {
-    let val: Int
-    var next: ListNode?
-    
-    init(_ val: Int, _ next: ListNode? = nil) {
-        self.val = val
-        self.next = next
-    }
-}
-
 class AddTwoNumbers {
-    static func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+    static func addTwoNumbers(_ l1: LinkedListNode?, _ l2: LinkedListNode?) -> LinkedListNode? {
         var stack1 = [Int]()
         
         var curr = l1
@@ -62,7 +52,7 @@ class AddTwoNumbers {
             let digit = sum % 10
             sum = sum / 10
             
-            let newNode = ListNode(digit)
+            let newNode = LinkedListNode(digit)
             newNode.next = curr
             
             curr = newNode

@@ -50,3 +50,8 @@ MyNotificationCenter.default.post(name: NSNotification.Name("TestNotification"),
 MyNotificationCenter.default.removeObserver(identifier2, name: NSNotification.Name("TestNotification"), object: nil)
 
 MyNotificationCenter.default.post(name: NSNotification.Name("TestNotification"), object: nil)
+
+// Reverse LinkedList
+let head = LinkedListHelper.makeLinkedList(with: [1, 2, 3, 4, 5])
+let reversedHead = ReverseLinkedList.reverse(head)
+
