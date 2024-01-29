@@ -55,3 +55,10 @@ MyNotificationCenter.default.post(name: NSNotification.Name("TestNotification"),
 let head = LinkedListHelper.makeLinkedList(with: [1, 2, 3, 4, 5])
 let reversedHead = ReverseLinkedList.reverse(head)
 
+// Rottin Oranges
+var orangeMatrix = [[2,1,1],[1,1,0],[0,1,1]]
+let rottinOrangesMinutes = RottingOranges.findRottingOranges(&orangeMatrix)
+
+// Binary Matrix
+let binaryMatrix = [[1,0,0],[1,1,0],[1,1,0]]
+let binaryMatrixDistance = BinaryMatrix.shortestPath(binaryMatrix)
