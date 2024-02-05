@@ -62,3 +62,7 @@ let rottinOrangesMinutes = RottingOranges.findRottingOranges(&orangeMatrix)
 // Binary Matrix
 let binaryMatrix = [[1,0,0],[1,1,0],[1,1,0]]
 let binaryMatrixDistance = BinaryMatrix.shortestPath(binaryMatrix)
+
+// Remove duplicates
+var lc26RemoveDuplicates = [1, 2, 3, 4, 5]
+let index = RemoveDuplicates.removeDuplicatesFromSortedArray(&lc26RemoveDuplicates)
