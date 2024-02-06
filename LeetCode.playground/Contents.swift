@@ -70,3 +70,7 @@ let index = RemoveDuplicates.removeDuplicatesFromSortedArray(&lc26RemoveDuplicat
 // Trapping rain water
 let lc42_elevations = [0,1,0,2,1,0,1,3,2,1,2,1]
 let trappedWater = TrappingRainWater.trap(lc42_elevations)
+
+// Brace expansion
+let lc1087_braceString = "{a,b,c}d{e,f}"
+let braceExpanded = BraceExpansion.braceExmapnsion(lc1087_braceString)
