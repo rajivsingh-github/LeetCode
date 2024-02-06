@@ -16,52 +16,56 @@ import Foundation
 
 */
 
-public struct TrappingRainWater {
-	func trap(_ height: [Int]) -> Int {
+public enum TrappingRainWater {
+	public static func trap(_ height: [Int]) -> Int {
+		guard height.isEmpty == false else { return 0 }
 		
-		guard height.count > 0 else { return 0 }
+		var waterAccumulated = 0
 		
-		var water = 0
-		
-		var maxHeight = Int.min
-		var maxHeightIndex = -1
-		
-		// Find the index with maximum height.
-		for (i, h) in height.enumerated() {
-			if h > maxHeight {
-				maxHeight = h
-				maxHeightIndex = i
+		// Find the tallest elevation.
+		var tallestElevation = Int.min
+		var tallestIndex = 0
+		for (i, elevation) in height.enumerated() {
+			if elevation > tallestElevation {
+				tallestElevation = elevation
+				tallestIndex = i
 			}
 		}
 		
 		/*
-		 Now, iterate all heights on left of max height.
-		 When we go down - we accumulate water.
-		 When we go up, we check and update left height
+		Find water accumulated on left of tallest index.
+		When we go down - water will be accumulated
+		When we go up, check and update the tallest index on the left
 		*/
-		var maxHeightOnLeft = 0
-		for i in 0..<maxHeightIndex {
-			if height[i] > maxHeightOnLeft {
-				maxHeightOnLeft = height[i]
-			}else {
-				water = water + (maxHeightOnLeft - height[i])
+		var tallestIndexOnLeft = 0
+		for i in 0..<tallestIndex {
+			if height[i] > height[tallestIndexOnLeft] {
+				tallestIndexOnLeft = i
+				continue
 			}
+			
+			// Going down. Add the water
+			let water = height[tallestIndexOnLeft] - height[i]
+			waterAccumulated += water
 		}
 		
 		/*
-		 Now, iterate all heights on right of max height.
-		 When we go down - we accumulate water.
-		 When we go up, we check and update right height
+		 Find water accumulated on right side.
+		 When we go down - water will be accumulated
+		 When we go up - check and update the tallest index on the right.
 		*/
-		var maxHeightOnRight = 0
-		for i in stride(from: height.count - 1, to: maxHeightIndex, by: -1) {
-			if height[i] > maxHeightOnRight {
-				maxHeightOnRight = height[i]
-			}else {
-				water = water + (maxHeightOnRight - height[i])
+		
+		var tallestIndexOnRight = height.count - 1
+		for i in stride(from: height.count - 1, to: tallestIndex, by: -1) {
+			if height[i] > height[tallestIndexOnRight] {
+				tallestIndexOnRight = i
+				continue
 			}
+			
+			let water = height[tallestIndexOnRight] - height[i]
+			waterAccumulated += water
 		}
 		
-		return water
+		return waterAccumulated
 	}
 }

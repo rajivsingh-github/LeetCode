@@ -66,3 +66,7 @@ let binaryMatrixDistance = BinaryMatrix.shortestPath(binaryMatrix)
 // Remove duplicates
 var lc26RemoveDuplicates = [1, 2, 3, 4, 5]
 let index = RemoveDuplicates.removeDuplicatesFromSortedArray(&lc26RemoveDuplicates)
+
+// Trapping rain water
+let lc42_elevations = [0,1,0,2,1,0,1,3,2,1,2,1]
+let trappedWater = TrappingRainWater.trap(lc42_elevations)
