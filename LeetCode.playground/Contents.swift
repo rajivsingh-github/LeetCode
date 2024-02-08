@@ -74,3 +74,15 @@ let trappedWater = TrappingRainWater.trap(lc42_elevations)
 // Brace expansion
 let lc1087_braceString = "{a,b,c}d{e,f}"
 let braceExpanded = BraceExpansion.braceExmapnsion(lc1087_braceString)
+
+// Zombie Infection
+var lc994_zombieAndHumans = [[0, 1, 1, 0, 1],
+							 [0, 1, 0, 1, 0],
+							 [0, 0, 0, 0, 1],
+							 [0, 1, 0, 0, 0]]
+let zombieInfectionTime = ZombieInfection.infectHumans(&lc994_zombieAndHumans)
+
+// Compare backspace string
+let lc844_s1 = "ab##"
+let lc844_s2 = "c#d#"
+let lc844_compare = BackSpaceStringCompare.compare(lc844_s1, lc844_s2)
