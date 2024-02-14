@@ -86,3 +86,6 @@ let zombieInfectionTime = ZombieInfection.infectHumans(&lc994_zombieAndHumans)
 let lc844_s1 = "ab##"
 let lc844_s2 = "c#d#"
 let lc844_compare = BackSpaceStringCompare.compare(lc844_s1, lc844_s2)
+
+// Perfect Number
+let lc507_isPerfectNumber = PerfectNumber.checkPerfectNumber(7)
