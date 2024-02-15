@@ -89,3 +89,10 @@ let lc844_compare = BackSpaceStringCompare.compare(lc844_s1, lc844_s2)
 
 // Perfect Number
 let lc507_isPerfectNumber = PerfectNumber.checkPerfectNumber(7)
+
+// Two Sum
+let lc01_twoSum = TwoSum.twoSumExists([3, 2, 4], 0)
+
+// Max earning from taxi
+let lc2008_rides = [[1,6,1],[3,10,2],[10,12,3],[11,12,2],[12,15,2],[13,18,1]]
+let maxTaxiEarning = MaxTaxiEarning.maxEarningFromTaxi(rides: lc2008_rides, n: 20)
