@@ -58,7 +58,7 @@ public enum MaxTaxiEarning {
 		}
 		
 		// IMP - dp[i] represents max earning starting from that position.
-		// We go from end position to start position.
+		// We compute dp[i] from end position to start position.
 		var dp = Array<Int>(repeating: 0, count: n + 1)
 		
 		for ridePosition in stride(from: n-1, through: 1, by: -1) {

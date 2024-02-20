@@ -96,3 +96,8 @@ let lc01_twoSum = TwoSum.twoSumExists([3, 2, 4], 0)
 // Max earning from taxi
 let lc2008_rides = [[1,6,1],[3,10,2],[10,12,3],[11,12,2],[12,15,2],[13,18,1]]
 let maxTaxiEarning = MaxTaxiEarning.maxEarningFromTaxi(rides: lc2008_rides, n: 20)
+
+
+// Degree of an array
+let lc697_nums = [1,2,2,3,1,4,2]
+let lc697_shortestSubarrayLength = ArrayDegree.findShortestSubArray(lc697_nums)
