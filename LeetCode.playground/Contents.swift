@@ -101,3 +101,9 @@ let maxTaxiEarning = MaxTaxiEarning.maxEarningFromTaxi(rides: lc2008_rides, n: 2
 // Degree of an array
 let lc697_nums = [1,2,2,3,1,4,2]
 let lc697_shortestSubarrayLength = ArrayDegree.findShortestSubArray(lc697_nums)
+
+// Grumpy Bookstore Owner
+let lc1052_customers = [1,0,1,2,1,1,7,5]
+let lc1052_grumpy = [0,1,0,1,0,1,0,1]
+let lc1052_minutesWindow = 3
+let lc1052_maxSatisfied = GrumpyBookstoreOwner.maxSatisfied(lc1052_customers, lc1052_grumpy, lc1052_minutesWindow)
